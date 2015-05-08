@@ -12,9 +12,9 @@ var express = require("express"),
   acs = require('koop-acs'),
   osm = require('koop-osm'),
   gist = require('koop-gist'),
+  //zillow = require('koop-zillow'),
   pgCache = require('koop-pgcache'),
   tiles = require('koop-tile-plugin'),
-  zillow = require('koop-zillow');
 
 // this is not required but is helpful
 koop.registerCache( pgCache );
@@ -27,7 +27,7 @@ koop.register( gist );
 koop.register( agol ); 
 koop.register( acs ); 
 koop.register( osm ); 
-koop.register( zillow );
+//koop.register( zillow );
 
 // register the tiles plugin
 koop.register( tiles ); 
