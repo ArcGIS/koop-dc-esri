@@ -14,7 +14,7 @@ var express = require("express"),
   gist = require('koop-gist'),
   //zillow = require('koop-zillow'),
   pgCache = require('koop-pgcache'),
-  tiles = require('koop-tile-plugin'),
+  tiles = require('koop-tile-plugin');
 
 // this is not required but is helpful
 koop.registerCache( pgCache );
