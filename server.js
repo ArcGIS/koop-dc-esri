@@ -14,6 +14,7 @@ var express = require("express"),
   gist = require('koop-gist'),
   //zillow = require('koop-zillow'),
   opendata = require('koop-opendata'),
+  fda = require('koop-fda'),
   pgCache = require('koop-pgcache'),
   tiles = require('koop-tile-plugin');
 
@@ -29,6 +30,7 @@ koop.register( agol );
 koop.register( acs ); 
 koop.register( osm ); 
 koop.register( opendata );
+koop.register( fda );
 //koop.register( zillow );
 
 // register the tiles plugin
