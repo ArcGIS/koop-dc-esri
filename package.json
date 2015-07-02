@@ -31,6 +31,6 @@
     "koop-tile-plugin": "~1.0.0",
     "koop-zillow": "~0.1.0",
     "koop-opendata": "^1.0.0",
-    "koop-fda": "^0.0.2"
+    "koop-fda": "^1.0.0"
   }
 }
