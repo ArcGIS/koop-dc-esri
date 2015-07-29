@@ -23,7 +23,7 @@
     "koop-gist": "~0.0.1",
     "koop-github": "~0.1.12",
     "koop-pgcache": "^1.0.0",
-    "koop-socrata": "^0.4.1",
+    "koop-socrata": "^1.0.1",
     "koop-acs": "~0.2.0",
     "koop-climate": "~0.0.1",
     "koop-cloudant": "~0.0.2",
