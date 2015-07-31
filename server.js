@@ -63,6 +63,7 @@ app.get('/status', function(req, res){
 });
 
 app.set('view engine', 'ejs');
+app.use(express.static('views/public'));
 
 // serve the index
 app.get("/", function(req, res, next) {
