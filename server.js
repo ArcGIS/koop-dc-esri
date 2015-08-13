@@ -12,7 +12,6 @@ var express = require("express"),
   acs = require('koop-acs'),
   osm = require('koop-osm'),
   gist = require('koop-gist'),
-  //zillow = require('koop-zillow'),
   opendata = require('koop-opendata'),
   fda = require('koop-fda'),
   pgCache = require('koop-pgcache'),
@@ -21,20 +20,19 @@ var express = require("express"),
 // this is not required but is helpful
 koop.registerCache( pgCache );
 
-//register providers with koop 
-koop.register( socrata ); 
-koop.register( ckan ); 
-koop.register( github ); 
-koop.register( gist ); 
-koop.register( agol ); 
-koop.register( acs ); 
-koop.register( osm ); 
+//register providers with koop
+koop.register( socrata );
+koop.register( ckan );
+koop.register( github );
+koop.register( gist );
+koop.register( agol );
+koop.register( acs );
+koop.register( osm );
 koop.register( opendata );
 koop.register( fda );
-//koop.register( zillow );
 
 // register the tiles plugin
-koop.register( tiles ); 
+koop.register( tiles );
 
 // create an express app
 var app = express();
@@ -64,11 +62,6 @@ app.get('/status', function(req, res){
 
 app.set('view engine', 'ejs');
 app.use(express.static('views/public'));
-
-// serve the index
-app.get("/", function(req, res, next) {
-  res.render(__dirname + '/views/index');
-});
 
 app.listen(process.env.PORT || config.server.port,  function() {
   console.log("Listening at http://%s:%d/", this.address().address, this.address().port);
