@@ -4,10 +4,9 @@ A sample express.js application that shows you how to deploy an instance of koop
 
 ## Install
 
-  ```
-    git clone https://github.com/arcgis/koop-dc-esri
-    cd koop-dc-esri-app
-    npm install 
-    node server.js  
-  ``` 
-
+```
+git clone https://github.com/arcgis/koop-dc-esri
+cd koop-dc-esri-app
+npm install
+node server.js
+```
