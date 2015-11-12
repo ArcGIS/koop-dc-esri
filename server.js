@@ -15,6 +15,7 @@ var express = require("express"),
   opendata = require('koop-opendata'),
   fda = require('koop-fda'),
   pgCache = require('koop-pgcache'),
+  zillow = require('koop-zillow'),
   tiles = require('koop-tile-plugin');
 
 var cluster = require('cluster');
@@ -45,6 +46,7 @@ if (cluster.isMaster) {
   koop.register( osm );
   koop.register( opendata );
   koop.register( fda );
+  koop.register( zillow );
 
   // register the tiles plugin
   koop.register( tiles );
